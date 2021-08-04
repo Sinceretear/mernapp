@@ -1,0 +1,3 @@
+[submodule "droid-media-lib"]
+        path = client
+        url = https://github.com/Sinceretear/mernapp.git
