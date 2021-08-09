@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 const cors = require("cors");
 require("dotenv").config({ path: "./config.env" });
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8081;
 app.use(cors());
 app.use(express.json());
 app.use(require("./routes/record"));
