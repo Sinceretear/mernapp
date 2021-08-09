@@ -7,7 +7,12 @@ app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 const cors = require("cors");
 require("dotenv").config({ path: "./config.env" });
-const port = process.env.PORT || 8081;
+const port = process.env.PORT || 8080;
+
+var server = app.listen(port, function () {
+        console.log('Server running at http://127.0.0.1:' + port + '/');
+    });
+
 app.use(cors());
 app.use(express.json());
 app.use(require("./routes/record"));
