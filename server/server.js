@@ -23,7 +23,6 @@ app.get('/flower', (req, res) => {
   });
 });
 
-
 app.listen(port, () => {
   // perform a database connection when server starts
   dbo.connectToServer(function (err) {
